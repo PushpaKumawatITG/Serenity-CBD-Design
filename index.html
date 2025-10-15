@@ -7,13 +7,13 @@
     <title>Serenity CBD-Design</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
 </head>
 
 <body>
     <div id="container">
         <section class="annoucement-bar-wrapper">
-            <div class="color-scheme-1">
+            <div class="color-scheme-1 gradient">
                 <div class="page-width">
                     <div class="anouncement-bar text-center">
                         <div>
@@ -26,12 +26,12 @@
 
         <section class="header-wrapper">
             <div class="page-width">
-                <div class="header-wrapper-inner color-scheme-4">
+                <div class="header-wrapper-inner color-scheme-4 gradient">
                     <div class="header">
                         <div class="flex justify-content-between align-item-center">
                             <div class="nav-bar-wrapper">
                                 <nav class="navbar">
-                                    <ul class="list-style-unset flex gap-20px">
+                                    <ul class="list-style-unset flex navbar-inner">
                                         <li><a href="#">Learn</a></li>
                                         <li><a href="#">Shop</a></li>
                                         <li><a href="#">Blog</a></li>
@@ -45,7 +45,7 @@
                                 <h1>
                                     <a href="#">
                                         <div class="logo">
-                                            <img src="../images/logo.png" alt="logo" width="100%" height="100%">
+                                            <img src="./assets/images/logo.png" alt="logo" width="100%" height="100%">
                                         </div>
                                     </a>
                                 </h1>
@@ -101,7 +101,8 @@
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                            </span></a>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +116,7 @@
             <section class="banner-wrapper">
                 <div class="page-width">
                     <div class="banner">
-                        <div class="banner-content color-scheme-4">
+                        <div class="banner-content color-scheme-4 gradient">
                             <div class="banner-content-inner flex gap-30px">
                                 <div class="content">
                                     <h2 class="font-weight-500px h1">The Natural Way to Feel Batter</h2>
@@ -135,26 +136,26 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-img-wrapper">
-                                    <img src="images/banner-img.jpg" alt="banner-img" width="100%" height="100%"
-                                        class="swiper-img">
+                                    <img src="./assets/images/banner-img.jpg" alt="banner-img" width="100%"
+                                        height="100%" class="swiper-img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-img-wrapper">
-                                    <img src="images/banner-img.jpg" alt="banner-img" width="100%" height="100%"
-                                        class="swiper-img">
+                                    <img src="./assets/images/banner-img.jpg" alt="banner-img" width="100%"
+                                        height="100%" class="swiper-img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-img-wrapper">
-                                    <img src="images/banner-img.jpg" alt="banner-img" width="100%" height="100%"
-                                        class="swiper-img">
+                                    <img src="./assets/images/banner-img.jpg" alt="banner-img" width="100%"
+                                        height="100%" class="swiper-img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-img-wrapper">
-                                    <img src="images/banner-img.jpg" alt="banner-img" width="100%" height="100%"
-                                        class="swiper-img">
+                                    <img src="./assets/images/banner-img.jpg" alt="banner-img" width="100%"
+                                        height="100%" class="swiper-img">
                                 </div>
                             </div>
                         </div>
@@ -163,67 +164,503 @@
                 </div>
             </section>
 
-            <section class="icon-with-text-section color-scheme-2">
-                <div class="icon-with-text-inner padding-common">
-                    <ul class="list-style-unset flex gap-20px">
-                        <li class="icon-with-text-wrapper">
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(1).png" alt="gluten free">
-                                    </div>
-                                </a>
+            <section class="icon-with-text-section color-scheme-2 gradient">
+                <div class="page-width">
+                    <div class="icon-with-text-inner padding-common">
+                        <ul class="list-style-unset flex gap-10px flex-wrap">
+                            <li class="icon-with-text-wrapper flex text-center grid-col-3-tablet grid-col-2-mobile">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(1).png" alt="gluten free"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 font-weight-500px">Gluten & Allergan free</h4>
+                                </div>
+                            </li>
+                            <li class="icon-with-text-wrapper flex grid-col-2-mobile grid-col-3-tablet">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(2).png" alt="test-tube"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 text-center font-weight-500px">Lab Tested</h4>
+                                </div>
+                            </li>
+                            <li class="icon-with-text-wrapper flex grid-col-3-tablet grid-col-2-mobile">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(3).png" alt="no gmo"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 text-center font-weight-500px">Non GMO</h4>
+                                </div>
+                            </li>
+                            <li class="icon-with-text-wrapper flex grid-col-3-tablet grid-col-2-mobile">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(4).png" alt="natural"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 text-center font-weight-500px">Organic</h4>
+                                </div>
+                            </li>
+                            <li class="icon-with-text-wrapper flex grid-col-3-tablet grid-col-2-mobile">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(5).png" alt="eco-friendly"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 text-center font-weight-500px">Eco - Friendly</h4>
+                                </div>
+                            </li>
+                            <li class="icon-with-text-wrapper flex grid-col-3-tablet grid-col-2-mobile">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-with-text-img-wrapper">
+                                            <img src="./assets/images/icon-with-text-img(6).png" alt="pets-allowed"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="h5 text-center font-weight-500px">Pet Friendly</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-collection">
+                <div class="page-width">
+                    <div class="padding-main">
+                        <div class="flex flex-column gap-20px">
+                            <div class="text-center">
+                                <h3 class="h1 font-weight-500px">Shop by category</h3>
                             </div>
-                        </li>
-                        <li>
                             <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(2).png" alt="test-tube">
-                                    </div>
-                                </a>
+                                <ul class="list-style-unset flex flex-wrap gap-20px featured-product-list">
+                                    <li
+                                        class="product-card grid-col-4-desktop grid-col-3-tablet grid-col-2-mobile color-scheme-3 gradient">
+                                        <div class="product-card-img">
+                                            <a href="#">
+                                                <div class="product-img">
+                                                    <img src="./assets/images/product-1.png" alt="catagory1"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div
+                                                class="product-card-content-inner text-center flex flex-column gap-10px">
+                                                <h5 class="h4 font-weight-500px">Topicals</h5>
+                                                <div>
+                                                    <button class="underline-btn">
+                                                        <a href="#" class="gradient font-size-14px">Shop Now</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="product-card grid-col-4-desktop grid-col-3-tablet grid-col-2-mobile color-scheme-3 gradient">
+                                        <div class="product-card-img">
+                                            <a href="#">
+                                                <div class="product-img">
+                                                    <img src="./assets/images/product-2.png" alt="catagory1"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div
+                                                class="product-card-content-inner text-center flex flex-column gap-10px">
+                                                <h5 class="h4 font-weight-500px">Tincture</h5>
+                                                <div>
+                                                    <button class="underline-btn">
+                                                        <a href="#" class="gradient font-size-14px">Shop Now</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="product-card grid-col-4-desktop grid-col-3-tablet grid-col-2-mobile color-scheme-3 gradient">
+                                        <div class="product-card-img">
+                                            <a href="#">
+                                                <div class="product-img">
+                                                    <img src="./assets/images/product-3.png" alt="catagory1"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div
+                                                class="product-card-content-inner text-center flex flex-column gap-10px">
+                                                <h5 class="h4 font-weight-500px">Gummies</h5>
+                                                <div>
+                                                    <button class="underline-btn">
+                                                        <a href="#" class="gradient font-size-14px">Shop Now</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="product-card grid-col-4-desktop grid-col-3-tablet grid-col-2-mobile color-scheme-3 gradient">
+                                        <div class="product-card-img">
+                                            <a href="#">
+                                                <div class="product-img">
+                                                    <img src="./assets/images/product-4.png" alt="catagory1"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div
+                                                class="product-card-content-inner text-center flex flex-column gap-10px">
+                                                <h5 class="h4 font-weight-500px">Apparel</h5>
+                                                <div>
+                                                    <button class="underline-btn">
+                                                        <a href="#" class="gradient font-size-14px">Shop Now</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(3).png" alt="no gmo">
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(4).png" alt="natural">
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(5).png" alt="eco-friendly">
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <img src="images/icon-with-text-img(6).png" alt="pets-allowed">
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="icon-with-text-section color-scheme-2 gradient">
+                <div class="page-width">
+                    <div class="padding-common">
+                        <ul class="list-style-unset flex gap-20px flex-wrap">
+                            <li class="flex flex-column grid-col-4-desktop grid-col-2-tablet">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-img-wrapper">
+                                            <img src="./assets/images/shipping-img.png" alt="Shipping" width="100%"
+                                                height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-size-18px font-weight-500px">Free Shipping</h4>
+                                </div>
+                            </li>
+                            <li class="flex flex-column grid-col-4-desktop grid-col-2-tablet">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-img-wrapper">
+                                            <img src="./assets/images/customer-support.png" alt="customer-support"
+                                                width="100%" height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-size-18px text-center font-weight-500px">customer support</h4>
+                                </div>
+                            </li>
+                            <li class="flex flex-column grid-col-4-desktop grid-col-2-tablet">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-img-wrapper">
+                                            <img src="./assets/images/payments.png" alt="payments" width="100%"
+                                                height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-size-18px text-center font-weight-500px">Flexible Payment</h4>
+                                </div>
+                            </li>
+                            <li class="flex flex-column grid-col-4-desktop grid-col-2-tablet">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <div class="icon-img-wrapper">
+                                            <img src="./assets/images/return-policy.png" alt="Return" width="100%"
+                                                height="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-size-18px font-weight-500px">Easy returns</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
+
+        <section class="footer-wrapper color-scheme-1 gradient">
+            <div class="page-width">
+                <div class="padding-common">
+                    <div class="footer-inner">
+                        <div class="flex justify-content-between flex-wrap gap-20px footer-nav-wraaper">
+                            <div class="footer-nav flex flex-column gap-20px grid-col-2-tablet">
+                                <div>
+                                    <p>As more and more people turn to natural alternatives for
+                                        their health and wellness, CBD-rich hemp extract products have become
+                                        increasingly popular.</p>
+                                </div>
+                                <div class="footer-logo-wrapper-outer">
+                                    <div class="footer-logo-wrapper">
+                                        <a href="#">
+                                            <div class="footer-logo">
+                                                <img src="./assets/images/footer-logo.png" alt="footer-logo"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="social-icons-wrapper">
+                                    <div class="social-icons-inner flex gap-20px">
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <div class="social-icon-img-wrapper">
+                                                    <img src="./assets/images/insta-icon.png" alt="instagram"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <div class="social-icon-img-wrapper">
+                                                    <img src="./assets/images/facebook-icon.png" alt="facebook"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <div class="social-icon-img-wrapper">
+                                                    <img src="./assets/images/linkdin-icon.png" alt="linkdin"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="social-icon">
+                                            <a href="#">
+                                                <div class="social-icon-img-wrapper">
+                                                    <img src="./assets/images/twitter-icon.png" alt="twitter"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-nav flex flex-column gap-20px grid-col-2-tablet">
+                                <div class="footer-nav-heading">
+                                    <h4 class="h5 font-weight-500px">Browse the site</h4>
+                                </div>
+                                <div class="flex flex-column gap-10px">
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Refer A friend</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Home</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Shop</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Events</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Disclaimer</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Policies</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">Contact Us</a></p>
+                                    <p class="font-size-16px font-weight-400px"><a href="#">My Account</a></p>
+                                </div>
+                            </div>
+
+                            <div class="footer-nav flex flex-column gap-20px grid-col-2-tablet">
+                                <div class="footer-nav-heading">
+                                    <h4 class="h4 font-weight-500px">Feel free to contact us!</h4>
+                                </div>
+                                <div class="flex flex-column gap-10px">
+                                    <div class="how-to-contact flex gap-10px">
+                                        <div>
+                                            <a href="#">
+                                                <div>
+                                                    <img src="./assets/images/location-icon.png" alt="location"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="font-size-14px font-weight-400px">Serenity CBD 1809 S St. 101-271
+                                                Sacramento, CA 95811</p>
+                                        </div>
+                                    </div>
+                                    <div class="how-to-contact flex gap-10px">
+                                        <div>
+                                            <a href="#">
+                                                <div>
+                                                    <img src="./assets/images/phone-call-icon.png" alt="location"
+                                                        width="100%" height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="font-size-14px font-weight-400px">916.850.0836</p>
+                                        </div>
+                                    </div>
+                                    <div class="how-to-contact flex gap-10px">
+                                        <div>
+                                            <a href="#">
+                                                <div>
+                                                    <img src="./assets/images/mail-icon.png" alt="location" width="100%"
+                                                        height="100%">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="font-size-14px font-weight-400px">Hello@SerenityCBD.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-nav flex flex-column gap-20px  grid-col-2-tablet">
+                                <div class="footer-nav-heading">
+                                    <h4 class="h4 font-weight-500px">SUBSCRIBE FOR SAVINGS!</h4>
+                                </div>
+                                <div class="flex flex-column gap-10px">
+                                    <div>
+                                        <p class="font-weight-400px">Join our mailing list to receive exclusive savings
+                                            and updates from our team</p>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Your Email" name="email" value="">
+                                    </div>
+                                    <div>
+                                        <button class="secondary-btn"><a href="#"
+                                                class="subscribe">Subscribe</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="flex justify-content-between flex-wrap">
+                            <div class="flex flex-column gap-20px">
+                                <form action="#">
+                                    <select name="Country" id="country"
+                                        class="select-country font-size-14px font-weight-400px">
+                                        <option value="United States (USD $)">United States (USD $)</option>
+                                    </select>
+                                </form>
+                                <div>
+                                    <p class="font-size-14px font-weight-400px">© 2024 Serenity CBD</p>
+                                </div>
+                            </div>
+
+                            <div class="payment-section flex flex-column gap-20px">
+                                <div class="flex gap-10px">
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(1).png" alt="AMAX" width="100%"
+                                                    height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(2).png" alt="apple-pay"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(3).png" alt="Diners-club"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(4).png" alt="Discover"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(5).png" alt="Meta" width="100%"
+                                                    height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(6).png" alt="Google-pay"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(7).png" alt="Mastercard"
+                                                    width="100%" height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(8).png" alt="Shop" width="100%"
+                                                    height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <div>
+                                                <img src="./assets/images/payment-app(9).png" alt="Visa" width="100%"
+                                                    height="100%">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex gap-20px">
+                                    <p class="font-size-14px font-weight-400px"><a href="#"
+                                            class="color-scheme-1 gradient">Privacy Policy</a></p>
+                                    <p class="font-size-14px font-weight-400px"><a href="#"
+                                            class="color-scheme-1 gradient">Terms of Service</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="js/script.js"></script>
 </body>
