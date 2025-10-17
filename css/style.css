@@ -472,6 +472,11 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
         top: 20%;
     }
     .positioned-box{
+        top: 47%;
+    }
+}
+@media(max-width: 1024px){
+    .positioned-box{
         top: 40%;
     }
 }
@@ -479,10 +484,7 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     .h1{
         font-size: 28px;
     }
-    .padding-common{
-        padding: 20px 40px;
-    }
-    .padding-main{
+    .padding-common, .padding-main{
         padding: 20px 40px;
     }
     .grid-col-2-tablet{
@@ -490,8 +492,8 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
         max-width: calc(45% - 20px);
     }
     .grid-col-1-tablet{
-        width: calc(100% - 20px);
-        max-width: calc(100% - 20px);
+        width: calc(100% - 0px);
+        max-width: calc(100% - 0px);
     }
     .grid-col-3-tablet{
         width: calc(30.33% - 20px);
@@ -548,10 +550,7 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     }
 }
 @media(max-width:768px){
-    .padding-common{
-        padding: 15px 20px;
-    }
-    .padding-main{
+    .padding-common, .padding-main{
         padding: 15px 20px;
     }
     .padding-tertiary{
