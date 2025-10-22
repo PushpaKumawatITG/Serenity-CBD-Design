@@ -91,7 +91,7 @@ let swiper4 = new Swiper(".mySwiper4", {
 });
 // pop up //
 window.addEventListener("load", () => {
-  if (localStorage.getItem("Age") == null) {
+  if (localStorage.getItem("User-age") == null) {
     document.body.style.overflow = 'hidden';
     welPopUpWrapper.style.display = "none";
     popUpWrapper.style.display = "flex";
@@ -104,7 +104,7 @@ ageFormSubmitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const Age = document.getElementById("age").value.trim();
   if(Age >= 18 && Age <= 100){
-     localStorage.setItem("Age", Age);
+     localStorage.setItem("User-age", Age);
       document.body.style.overflow = 'auto';
       popUpWrapper.style.display = "none";
       invalidAgeWrapper.style.display = "none";
