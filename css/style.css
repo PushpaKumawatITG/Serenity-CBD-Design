@@ -209,7 +209,8 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     padding: 15px 130px;
 }
 .header-icon-wrapper{
-    width: 411px;
+    width: 100%;
+    max-width: 411px;
     justify-content: flex-end;
 }
 .logo{
@@ -523,6 +524,10 @@ input[type="number"] {
     .positioned-box{
         top: 47%;
     }
+    .header-icon-wrapper{
+        width: 100%;
+        max-width: 360px;
+    }
 }
 @media(max-width: 1024px){
     .positioned-box{
@@ -555,7 +560,8 @@ input[type="number"] {
         padding: 7px 10px;
     }
     .header-icon-wrapper{
-        width: 390px;
+        width: 100%;
+        max-width: 390px;
         justify-content: flex-end;
     }
     .banner-content{

@@ -14,7 +14,7 @@ function updateNavbar() {
     footerNavWrapper.classList.remove("justify-content-between");
     footerNavWrapper.classList.add("flex-wrap");
   } else {
-    navbar.innerHTML = `<ul class="list-style-unset flex gap-20px">
+    navbar.innerHTML = `<ul class="list-style-unset flex gap-10px">
                                 <li><a href="#">Learn</a></li>
                                 <li><a href="#">Shop</a></li>
                                 <li><a href="#">Blog</a></li>
