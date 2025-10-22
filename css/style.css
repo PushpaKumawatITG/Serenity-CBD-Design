@@ -734,6 +734,9 @@ input[type="number"] {
     .logo-inner{
         max-width: 150px;
     }
+    .wel-pop-up-inner, .pop-up-inner{
+        width: 70%;
+    }
 }
 @media(max-width:768px) and (min-width:495px){
     .banner-content{
