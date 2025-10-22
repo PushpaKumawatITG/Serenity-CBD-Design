@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     padding: 13px 36px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .secondary-btn{
     color: var(--color-forgrade-primary);
@@ -154,6 +155,7 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     padding: 13px 36px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .primary-btn > a{ 
     color: inherit;
@@ -438,6 +440,52 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     object-fit: cover;
     object-position: center;
 }
+/* popup */
+.wel-pop-up-wrapper, .invalid-age-wrapper, .pop-up-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.wel-pop-up-inner, .pop-up-inner{
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+}
+.pop-up-inner form > div {
+    margin-bottom: 20px;
+}
+label[for="age"] {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+#age-form-submit-btn {
+    width: 100%;
+    background: #26a3db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.logo-inner{
+    width: 100px;
+    display: inline-block;
+}
 .grid-col-2-desktop{
     width: calc(50% - 10px);
     max-width: calc(50% - 10px);
@@ -468,7 +516,6 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     }
     .text-with-bg-img-content {
         max-width: 50%;
-        position: absolute;
         top: 20%;
     }
     .positioned-box{
@@ -548,6 +595,10 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
         display: flex;
         justify-content: center;
     }
+    .header-icon-wrapper{
+        width: 70px;
+        justify-content: flex-end;
+    }
 }
 @media(max-width:768px){
     .padding-common, .padding-main{
@@ -585,10 +636,6 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
     }
     .payment-section{
         margin-top: 20px;
-    }
-    .header-icon-wrapper{
-        width: 70px;
-        justify-content: flex-end;
     }
     .h1{
         font-size: 16px;
@@ -680,5 +727,10 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
 @media(max-width:768px) and (min-width:495px){
     .banner-content{
         top: 140px;
+    }
+}
+@media(min-width:1401px){
+    .text-with-bg-img-content{
+        max-width: 650px;
     }
 }

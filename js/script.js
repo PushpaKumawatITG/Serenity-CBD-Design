@@ -1,6 +1,10 @@
 const navbar = document.querySelector(".navbar");
 const headerIcon = document.querySelector(".header-icon");
 const footerNavWrapper = document.querySelector(".footer-nav-wraaper");
+const ageFormSubmitBtn = document.getElementById("age-form-submit-btn");
+const popUpWrapper = document.querySelector(".pop-up-wrapper");
+const welPopUpWrapper = document.querySelector(".wel-pop-up-wrapper");
+const invalidAgeWrapper = document.querySelector(".invalid-age-wrapper");
 
 function updateNavbar() {
   if (window.innerWidth <= 990) {
@@ -40,9 +44,9 @@ let swiper1 = new Swiper(".mySwiper1", {
     disableOnInteraction: false,
   },
 });
-var swiper2 = new Swiper(".mySwiper2", {
+let swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 20,
-  slidesPerView: 1.5, 
+  slidesPerView: 1.5,
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
@@ -58,7 +62,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
   },
 });
-var swiper3 = new Swiper(".mySwiper3", {
+let swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1.5,
   spaceBetween: 20,
   observer: true,
@@ -75,13 +79,45 @@ var swiper3 = new Swiper(".mySwiper3", {
     }
   }
 });
-var swiper4 = new Swiper(".mySwiper4", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    observer: true,
-    observeParents: true,
-    navigation: {
-      nextEl: ".swiper-button-next4",
-      prevEl: ".swiper-button-prev4",
-    },
-  });
+let swiper4 = new Swiper(".mySwiper4", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  observer: true,
+  observeParents: true,
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+});
+// pop up //
+window.addEventListener("load", () => {
+  if (localStorage.getItem("Age") == null) {
+    document.body.style.overflow = 'hidden';
+    welPopUpWrapper.style.display = "none";
+    popUpWrapper.style.display = "flex";
+  } else {
+    popUpWrapper.style.display = "none";
+    document.body.style.overflow = 'auto';
+  }
+});
+ageFormSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const Age = document.getElementById("age").value.trim();
+  if(Age >= 18 && Age <= 100){
+     localStorage.setItem("Age", Age);
+      document.body.style.overflow = 'auto';
+      popUpWrapper.style.display = "none";
+      invalidAgeWrapper.style.display = "none";
+      welPopUpWrapper.style.display = "flex";
+      setTimeout(() => {
+        welPopUpWrapper.style.display = "none";
+      }, 2000);
+  } else{
+    popUpWrapper.style.display = "none";
+    invalidAgeWrapper.style.display = "flex";
+    setTimeout(() => {
+      popUpWrapper.style.display = "flex";
+      invalidAgeWrapper.style.display = "none";
+    }, 2000);
+  };
+});
