@@ -39,6 +39,7 @@ let swiper1 = new Swiper(".mySwiper1", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  allowTouchMove: true, 
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

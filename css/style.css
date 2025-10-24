@@ -231,12 +231,16 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5 {
 .banner-content{
     position: absolute;
     left: 130px;
-    top: 258px;
+    top: 40vh;
     z-index: 1;
 }
 .banner-content-inner{
     max-width: 442px;
     flex-direction: column;
+}
+.slider-inner{
+    height: 100%;
+    max-height: 88vh;
 }
 /* icon-with-text-section */
  .icon-with-text-wrapper {
